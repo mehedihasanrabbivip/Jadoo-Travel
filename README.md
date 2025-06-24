@@ -34,7 +34,7 @@ Built from scratch, following best practices.
 
 ## 🌐 Live Demo
 
-[Click here to view](https://your-netlify-link.netlify.app)
+[Click here to view](https://jadoo-travel-gold.vercel.app/)
 
 ## 💡 Lessons Learned
 
