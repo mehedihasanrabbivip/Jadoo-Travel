@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* transitio for mobile menu */
+.mobile-menu {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+/* daek mode style Icons (🌞 / 🌙) */
+#toggleBtn::before,
+#toggleBtnMobile::before {
+  content: "🌞";
+  position: absolute;
+  margin-left: -30px;
+}
+
+html.dark #toggleBtn::before,
+html.dark #toggleBtnMobile::before {
+  content: "🌙";
+  margin-left: -30px;
+}
+
+html{
+ scroll-behavior: smooth;
+}
+

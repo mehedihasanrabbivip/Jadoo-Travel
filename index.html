@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <title> Jadoo Travel - Agency Landing Page </title>
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white">
+<!-- Navbar start -->
+<nav class="bg-[#fefcfb] shadow px-6 md:px-20 py-4 dark:bg-gray-900 transition-colors duration-500 dark:text-white">
+  <div class="flex justify-between items-center max-w-7xl mx-auto">
+
+    <!-- Logo -->
+    <div class="text-2xl font-bold text-gray-800 dark:text-white">
+      Jad<span class="text-yellow-500">oo</span>
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-6 text-gray-700 dark:text-gray-300 font-medium">
+      <li><a href="#services" class="hover:text-yellow-500">Services</a></li>
+      <li><a href="#destinations" class="hover:text-yellow-500">Destinations</a></li>
+      <li><a href="#testimonials" class="hover:text-yellow-500">Testimonials</a></li>
+      <li><a href="#subscribe" class="hover:text-yellow-500">Subscribe</a></li>
+    </ul>
+
+    <!-- Right Side -->
+    <div class="hidden md:flex items-center space-x-4">
+      <button id="toggleBtn"
+        class="relative w-14 h-6 flex items-center bg-yellow-400 dark:bg-gray-700 rounded-full p-1 transition duration-500 ease-in-out focus:outline-none">
+        <div id="circlepc"
+          class="bg-white w-4 h-4 rounded-full shadow-md transform transition duration-300 ease-in-out"></div>
+      </button>
+
+      <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-yellow-500">Login</a>
+      <button
+        class="px-4 py-1 border border-gray-700 dark:border-gray-300 rounded hover:bg-yellow-400 hover:text-white transition">Sign
+        up</button>
+      <select class="text-gray-700 dark:text-gray-300 bg-transparent focus:outline-none">
+        <option>EN</option>
+        <option>BN</option>
+        <option>AR</option>
+      </select>
+    </div>
+
+    <!-- Hamburger -->
+    <div class="md:hidden">
+      <button onclick="toggleMenu()" aria-label="Toggle menu"
+        class="text-gray-700 dark:text-gray-300 focus:outline-none text-2xl">
+        ☰
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu md:hidden max-h-0 overflow-hidden transition-all duration-500">
+    <ul class="flex flex-col space-y-3 mt-4 text-gray-700 dark:text-gray-300 font-medium px-10 pb-4">
+      <li><a href="#services" class="block hover:text-yellow-500">Services</a></li>
+      <li><a href="#destinations" class="block hover:text-yellow-500">Destinations</a></li>
+      <li><a href="#testimonials" class="block hover:text-yellow-500">Testimonials</a></li>
+      <li><a href="#subscribe" class="block hover:text-yellow-500">Subscribe</a></li>
+      <li><a href="#" class="block hover:text-yellow-500">Login</a></li>
+      <li><a href="#" class="block hover:text-yellow-500">Sign up</a></li>
+      <li>
+        <button id="toggleBtnMobile"
+          class="relative w-14 h-6 flex items-center bg-yellow-400 dark:bg-gray-700 rounded-full p-1 transition duration-500 ease-in-out focus:outline-none">
+          <div id="circlemobile"
+            class="bg-white w-4 h-4 rounded-full shadow-md transform transition duration-300 ease-in-out"></div>
+        </button>
+        <select class="w-full bg-transparent text-gray-700 dark:text-gray-300 mt-2 border border-gray-300 dark:border-gray-500 rounded px-2 py-1">
+          <option>EN</option>
+          <option>BN</option>
+          <option>AR</option>
+        </select>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Navbar End -->
+
+<!-- Hero Section Start -->
+<section class="relative flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-20 py-10 bg-[#fefcfb] overflow-hidden dark:bg-gray-900 transition-colors duration-500 dark:text-white">
+  <!-- Text Content -->
+  <div class="w-full md:w-1/2 space-y-6 text-center md:text-left">
+    <p class="text-sm text-orange-500 font-semibold uppercase tracking-widest ">
+      Best destinations around the world
+    </p>
+    <h1 class="text-4xl sm:text-5xl font-bold leading-tight text-gray-900 dark:text-white">
+      Travel, <span class="text-orange-500 underline">enjoy</span><br />
+      and live a new <br />
+      and full life
+    </h1>
+    <p class="text-gray-500 text-sm md:text-base max-w-md mx-auto md:mx-0 dark:text-gray-300">
+      Built Wicket longer admire do barton vanity itself do in it.
+      Preferred to sportsmen it engrossed listening. Park gate sell
+      they west hard for the.
+    </p>
+    <!-- Buttons -->
+    <div class="flex items-center justify-center md:justify-start gap-5">
+      <button class="bg-yellow-500 text-white px-5 py-2 rounded-md font-semibold hover:bg-yellow-600 transition">
+        Find out more
+      </button>
+      <button class="flex items-center gap-2 text-gray-700 hover:text-orange-500 transition font-semibold dark:text-white">
+        <span class="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-md ">
+          ▶
+        </span>
+        Play Demo
+      </button>
+    </div>
+  </div>
+     
+  <!-- Image Section -->
+  <div class="w-full md:w-1/2 flex justify-center relative mb-10 md:mb-0 overflow-hidden">
+    <!-- Main Image -->
+    <img
+      src="images/Traveller 1.png"
+      alt="Happy traveler enjoying vacation"
+      class="w-[85%] max-w-sm md:max-w-md lg:max-w-lg z-10"
+    />
+
+    <!-- Flying Planes -->
+    <img
+      src="images/Decore.png"
+      alt="Decorative flying plane"
+      class="absolute w-64 md:w-80 top-0 right-0 z-0"
+    />
+  </div>
+</section>
+<!-- Hero Section End -->
+
+<!-- CATEGORY Section start -->
+<section id="services" class="py-22 bg-[#fefcfb] dark:bg-gray-900 transition-colors duration-500 dark:text-white">
+  <div class="max-w-7xl mx-auto px-6 md:px-20 text-center">
+    <p class="text-sm text-gray-500 tracking-widest uppercase dark:text-white">Category</p>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 dark:text-white">We Offer Best Services</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="flex flex-col items-center text-center bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
+        <img src="images/Group 48.png" alt="Weather" class="mb-4">
+        <h3 class="text-lg font-semibold text-gray-700">Calculated Weather</h3>
+        <p class="text-sm text-gray-500 mt-2">Built Wicket longer admire do barton vanity itself do in it.</p>
+      </div>
+
+      <div class="flex flex-col items-center text-center bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
+       <img src="images/Group 51.png" alt="Plane Icon" class="w-[115px] h-auto mb-1" />
+        <h3 class="text-lg font-semibold text-gray-700">Best Flights</h3>
+        <p class="text-sm text-gray-500 mt-2">Engrossed listening. Park gate sell they west hard for the.</p>
+      </div>
+
+      <div class="flex flex-col items-center text-center bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
+        <img src="images/Group 50.png" alt="Events" class="mb-4">
+        <h3 class="text-lg font-semibold text-gray-700">Local Events</h3>
+        <p class="text-sm text-gray-500 mt-2">Barton vanity itself do in it. Preferred to men it engrossed listening.</p>
+      </div>
+
+      <div class="flex flex-col items-center text-center bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
+        <img src="images/Group 49.png" alt="Customization" class="mb-6">
+        <h3 class="text-lg font-semibold text-gray-700">Customization</h3>
+        <p class="text-sm text-gray-500 mt-2">We deliver outsourced aviation services for military customers</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CATEGORY Section end -->
+
+<!-- Top Selling start -->
+<section id="destinations" class="max-w-7xl mx-auto px-6 md:px-20 py-22 bg-[#fefcfb] dark:bg-gray-900 transition-colors duration-500 dark:text-white">
+  <h4 class="text-center text-gray-500 text-sm mb-2 dark:text-white">Top Selling</h4>
+  <h2 class="text-center text-3xl font-bold mb-10 dark:text-white">Top Destinations</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
+    <!-- Card 1 -->
+    <div class="w-full max-w-[315px] mx-auto rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:scale-105">
+      <img src="images/Rectangle 14.png" alt="Rome, Italy" class="w-full h-60 object-cover object-top rounded-xl">
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1">
+          <h3 class="font-semibold text-lg">Rome, Italy</h3>
+          <span class="text-indigo-600 font-semibold dark:text-green-500">$5.42k</span>
+        </div>
+        <div class="flex items-center mt-1">
+          <div class="dark:bg-white"> <img src="images/Navigation.png" alt="icon" class="w-4 h-4 mr-2"> </div>
+          <p class="text-gray-500 text-sm dark:text-gray-300 dark:ms-2">10 Days Trip</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="w-full max-w-[315px] mx-auto rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:scale-105">
+      <img src="images/Rectangle 14 (2).png" alt="London, UK" class="w-full h-60 object-cover object-top rounded-xl">
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1">
+          <h3 class="font-semibold text-lg">London, UK</h3>
+          <span class="text-indigo-600 font-semibold dark:text-green-500">$4.2k</span>
+        </div>
+        <div class="flex items-center mt-1">
+          <div class="dark:bg-white"> <img src="images/Navigation.png" alt="icon" class="w-4 h-4 mr-2"> </div>
+          <p class="text-gray-500 text-sm dark:text-gray-300 dark:ms-2">12 Days Trip</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="w-full max-w-[315px] mx-auto rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:scale-105">
+      <img src="images/Rectangle 14 (1).png" alt="Full Europe" class="w-full h-60 object-cover object-top rounded-xl">
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-1">
+          <h3 class="font-semibold text-lg">Full Europe</h3>
+          <span class="text-indigo-600 font-semibold dark:text-green-500">$15k</span>
+        </div>
+        <div class="flex items-center mt-1">
+          <div class="dark:bg-white"> <img src="images/Navigation.png" alt="icon" class="w-4 h-4 mr-2 "></div>
+          <p class="text-gray-500 text-sm dark:text-gray-300 dark:ms-2">28 Days Trip</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Top Selling end -->
+
+<!--  Testimonials Section  start -->
+<section  id="testimonials" class="bg-[#fefcfb] py-22 px-6 md:px-20 dark:bg-gray-900 transition-colors duration-500 dark:text-white">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-12">
+
+    <!-- Left Heading -->
+    <div class="md:w-1/2 mb-3">
+      <p class="text-sm text-gray-500 font-semibold uppercase mb-4 dark:text-white">Testimonials</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 dark:text-white">
+        What People Say <br />
+        About Us.
+      </h2>
+
+      <!-- Dots -->
+      <div class="mt-6 flex gap-2">
+        <span class="w-2 h-2 rounded-full bg-gray-800"></span>
+        <span class="w-2 h-2 rounded-full bg-gray-300 dark:text-white"></span>
+        <span class="w-2 h-2 rounded-full bg-gray-300 dark:text-white"></span>
+      </div>
+    </div>
+
+    <!-- Right Testimonial Box -->
+    <div class="md:w-1/2 relative">
+      <!-- Avatar -->
+      <div class="absolute -top-6 left-6 z-10">
+        <img src="images/Image (1).png" alt="Avatar" class="w-12 h-12 rounded-full border-4 border-white shadow-md" />
+      </div>
+
+      <!-- Box -->
+      <div class="bg-white shadow-lg rounded-xl px-6 py-8 pl-20 relative z-0">
+        <p class="text-gray-600 text-sm leading-relaxed">
+          "On the Windows talking painted pasture yet its express parties use.
+          Sure last upon he same as knew next. Of believed or diverted no."
+        </p>
+
+        <!-- Name and Location -->
+        <div class="mt-6">
+          <h4 class="font-semibold text-gray-800">Mike taylor</h4>
+          <p class="text-sm text-gray-500">Lahore, Pakistan</p>
+        </div>
+
+        <!-- Footer Line -->
+        <div class="mt-4 border-t pt-4">
+          <h5 class="text-sm text-gray-700 font-semibold">Chris Thomas</h5>
+          <p class="text-sm text-gray-500">CEO of Red Button</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Testimonials Section end -->
+
+<!-- Brand Logos Section -->
+<section class="py-10 bg-[#fefcfb] dark:bg-gray-900 transition-colors duration-500">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-20">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-y-6 gap-x-4 items-center justify-items-center bg-[#fefcfb] dark:bg-[#DFD7F9] rounded-lg p-6 transition duration-500">
+      <!-- Axon -->
+      <div class="hover:shadow-xl transition duration-300 transform hover:scale-105 dark:hover:bg-[#DFD7F9]">
+        <img src="images/image 27.png" alt="Axon"
+          class="h-12 w-24 object-contain mx-auto transition duration-500" />
+      </div>
+      <!-- Jetstar -->
+      <div class="hover:shadow-xl transition duration-300 transform hover:scale-105 dark:hover:bg-[#DFD7F9]">
+        <img src="images/image 28.png" alt="Jetstar"
+          class="h-12 w-24 object-contain mx-auto transition duration-500" />
+      </div>
+      <!-- Expedia -->
+      <div class="hover:shadow-xl transition duration-300 transform hover:scale-105 dark:hover:bg-[#DFD7F9]">
+        <img src="images/image 29.png" alt="Expedia"
+          class="h-12 w-24 object-contain mx-auto transition duration-500" />
+      </div>
+      <!-- Qantas -->
+      <div class="hover:shadow-xl transition duration-300 transform hover:scale-105 dark:hover:bg-[#DFD7F9]">
+        <img src="images/image 30.png" alt="Qantas"
+          class="h-12 w-24 object-contain mx-auto transition duration-500" />
+      </div>
+      <!-- Alitalia -->
+      <div class="hover:shadow-xl transition duration-300 transform hover:scale-105 dark:hover:bg-[#DFD7F9]">
+        <img src="images/image 31.png" alt="Alitalia"
+          class="h-12 w-24 object-contain mx-auto transition duration-500" />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Brand Logos Section end -->
+
+
+<!--  Subscribe Section start -->
+<section id="subscribe" class="py-16 relative bg-[#fefcfb] dark:bg-gray-900 transition-colors duration-500 dark:text-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative bg-[#DFD7F9] rounded-2xl shadow-lg p-10 text-center">
+      
+      <!-- Paper Plane Icon Image -->
+      <div class="absolute -top-5 -right-5 rounded-full p-4">
+        <img src="images/Group 77.png" alt="Paper Plane" class="h-10 w-10" />
+      </div>
+
+      <!-- Text -->
+      <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 leading-relaxed dark:text-gray-900">
+        Subscribe to get information, latest news and other <br class="hidden sm:block" />
+        interesting offers about <span class="font-bold">Jadoo</span>
+      </h2>
+
+      <!-- Form -->
+      <form class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div class="relative w-full sm:w-auto">
+          <input
+            type="email"
+            placeholder="Your email"
+            class="pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400 w-full sm:w-80 dark:text-gray-900"
+          />
+          <!-- Email Icon Image -->
+          <img
+            src="images/Group 46.png"
+            alt="Email Icon"
+            class="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 opacity-70"
+          />
+        </div>
+       <button
+        type="button"
+          onclick="showThankYou()"
+         class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg transition duration-300">
+         Subscribe
+       </button>
+       <p id="thanksMsg" class="text-green-600 font-semibold mt-4 hidden">
+  ✅  Thank you for subscribing!
+       </p>
+
+
+      </form>
+    </div>
+  </div>
+</section>
+<!-- Subscribe Section end -->
+
+<!-- Footer Section start -->
+ <footer class="bg-[#fefcfb] py-12 dark:bg-gray-900 transition-colors duration-500 dark:text-white">
+  <div class="max-w-7xl mx-auto px-6 sm:px-15 lg:px-22">
+    <div class="grid grid-cols-1 sm:grid-cols-5 lg:grid-cols-5 gap-10 text-sm text-gray-700">
+
+      <!-- Jadoo -->
+      <div>
+        <h2 class="text-2xl font-bold text-gray-900 mb-2 dark:text-white ">Jadoo.</h2>
+        <p class="text-gray-500 max-w-xs  dark:text-white ">Book your trip in minute, get full control for much longer.</p>
+      </div>
+
+      <!-- Company -->
+      <div class="text-center lg:text-left">
+        <h3 class="font-semibold text-gray-900 mb-3 dark:text-white">Company</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline hover:text-yellow-500 dark:text-white">About</a></li>
+          <li><a href="#" class="hover:underline hover:text-yellow-500 dark:text-white">Careers</a></li>
+          <li><a href="#" class="hover:underline hover:text-yellow-500 dark:text-white">Mobile</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="text-center lg:text-left">
+        <h3 class="font-semibold text-gray-900 mb-3 dark:text-white ">Contact</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline hover:text-yellow-500 dark:text-white">Help/FAQ</a></li>
+          <li><a href="#" class="hover:underline hover:text-yellow-500 dark:text-white">Press</a></li>
+          <li><a href="#" class="hover:underline hover:text-yellow-500 dark:text-white">Affiliates</a></li>
+        </ul>
+      </div>
+
+      <!-- More -->
+      <div class="text-center lg:text-left">
+        <h3 class="font-semibold text-gray-900 mb-3 dark:text-white">More</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline hover:text-yellow-500 dark:text-white">Airlinefees</a></li>
+          <li><a href="#" class="hover:underline hover:text-yellow-500 dark:text-white">Airline</a></li>
+          <li><a href="#" class="hover:underline hover:text-yellow-500 dark:text-white">Low fare tips</a></li>
+        </ul>
+      </div>
+
+      <!-- Social + App -->
+      <div class="text-center lg:text-left flex flex-col justify-center items-center">
+        <!-- Social Icons -->
+        <div class="flex justify-center lg:justify-start space-x-4 text-lg mb-4">
+          <a href="#" class="text-gray-600 hover:text-gray-900 dark:text-white dark:hover:text-green-500"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-gray-600 hover:text-gray-900 dark:text-white dark:hover:text-green-500"><i class="fab fa-instagram"></i></a>
+         <a href="#" class="text-gray-600 hover:text-gray-900 dark:text-white dark:hover:text-green-500">
+        <i class="fab fa-twitter"></i> </a>
+        </div>
+
+        <!-- App Download -->
+     <p class="font-medium text-gray-900 mb-2 dark:text-white">Discover our app</p>
+<div class="flex justify-center lg:justify-start gap-2">
+  <img src="images/Google Play.png" alt="Google Play" 
+       class="h-5 w-auto transition duration-300 dark:brightness-90 dark:contrast-110" />
+  <img src="images/Play Store.png" alt="App Store" 
+       class="h-5 w-auto transition duration-300 dark:brightness-90 dark:contrast-110" />
+</div>
+
+
+    </div>
+  </div>
+</footer>
+<!-- Footer Section end -->
+  <!-- JS for toggle -->
+  <script src="scripts.js"> </script>
+</body>
+</html>
+                   

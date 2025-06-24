@@ -1,0 +1,5 @@
+# Always use LF line endings
+*.js text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.html text eol=lf
